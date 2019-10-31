@@ -1,0 +1,27 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>addButton.png</file>
+        <file>database.png</file>
+        <file>history.png</file>
+        <file>left.png</file>
+        <file>locked.png</file>
+        <file>market_icon.png</file>
+        <file>menuButton.png</file>
+        <file>notification.png</file>
+        <file>price_tag.png</file>
+        <file>removeButton.png</file>
+        <file>search.png</file>
+        <file>system.png</file>
+        <file>transact.png</file>
+        <file>user_female.png</file>
+        <file>user_male.png</file>
+        <file>users.png</file>
+    </qresource>
+    <qresource prefix="/sounds">
+        <file>voice-accepted.wav</file>
+        <file>voice-access-denied.wav</file>
+        <file>voice-piy.wav</file>
+        <file>voice-system-activated.wav</file>
+        <file>voice-welcome.wav</file>
+    </qresource>
+</RCC>

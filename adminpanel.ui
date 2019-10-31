@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AdminPanel</class>
+ <widget class="QWidget" name="AdminPanel">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>658</width>
+    <height>464</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Admin Panel</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="rfid.qrc">
+    <normaloff>:/images/system.png</normaloff>:/images/system.png</iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="0">
+    <widget class="QSplitter" name="splitter">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QListWidget" name="listWidget">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>200</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="spacing">
+       <number>10</number>
+      </property>
+      <property name="modelColumn">
+       <number>0</number>
+      </property>
+      <property name="uniformItemSizes">
+       <bool>false</bool>
+      </property>
+      <item>
+       <property name="text">
+        <string>Manage Store</string>
+       </property>
+       <property name="icon">
+        <iconset resource="rfid.qrc">
+         <normaloff>:/images/database.png</normaloff>:/images/database.png</iconset>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Manage Users</string>
+       </property>
+       <property name="icon">
+        <iconset resource="rfid.qrc">
+         <normaloff>:/images/users.png</normaloff>:/images/users.png</iconset>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>App History</string>
+       </property>
+       <property name="icon">
+        <iconset resource="rfid.qrc">
+         <normaloff>:/images/history.png</normaloff>:/images/history.png</iconset>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Admin Settings</string>
+       </property>
+       <property name="icon">
+        <iconset resource="rfid.qrc">
+         <normaloff>:/images/system.png</normaloff>:/images/system.png</iconset>
+       </property>
+      </item>
+     </widget>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="storePage">
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <widget class="QTreeWidget" name="treeWidget">
+          <column>
+           <property name="text">
+            <string>id</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>item_name</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>item_price</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>item_category</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>item_description</string>
+           </property>
+          </column>
+          <item>
+           <property name="text">
+            <string>1</string>
+           </property>
+           <property name="text">
+            <string>Infinix Hot 2</string>
+           </property>
+           <property name="text">
+            <string>N45500</string>
+           </property>
+           <property name="text">
+            <string>Hardware</string>
+           </property>
+           <property name="text">
+            <string>Mobile phone.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2</string>
+           </property>
+           <property name="text">
+            <string>Ear piece</string>
+           </property>
+           <property name="text">
+            <string>N750</string>
+           </property>
+           <property name="text">
+            <string>Accessories</string>
+           </property>
+           <property name="text">
+            <string>Ear piece.</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="1" column="2">
+           <widget class="QPushButton" name="pushButton_3">
+            <property name="text">
+             <string>UPDATE</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="pushButton_2">
+            <property name="text">
+             <string>DELETE</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="pushButton">
+            <property name="text">
+             <string>ADD</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0" colspan="2">
+           <widget class="QLineEdit" name="searchEdit">
+            <property name="cursorPosition">
+             <number>0</number>
+            </property>
+            <property name="placeholderText">
+             <string>Search for items...</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QPushButton" name="searchBtn">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="rfid.qrc">
+              <normaloff>:/images/search.png</normaloff>:/images/search.png</iconset>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="usersPage">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Employees</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTableView" name="employeeTable"/>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QPushButton" name="rmvCashierBtn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>ADD</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="rmvCashierBtn_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>REMOVE</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="Line" name="line">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Customers</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTableView" name="customerTable"/>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QPushButton" name="pushButton_8">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>ADD</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_7">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>REMOVE</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="historyPage">
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0" colspan="2">
+         <widget class="QTextEdit" name="textEdit"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLineEdit" name="lineEdit">
+          <property name="placeholderText">
+           <string>Search history...</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QPushButton" name="pushButton_4">
+          <property name="text">
+           <string>Clear History</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="settingsPage">
+       <layout class="QGridLayout" name="gridLayout_6">
+        <item row="0" column="0">
+         <widget class="QTabWidget" name="tabWidget">
+          <widget class="QWidget" name="tab">
+           <attribute name="title">
+            <string>Tab 1</string>
+           </attribute>
+          </widget>
+          <widget class="QWidget" name="tab_2">
+           <attribute name="title">
+            <string>Tab 2</string>
+           </attribute>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="rfid.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>listWidget</sender>
+   <signal>currentRowChanged(int)</signal>
+   <receiver>stackedWidget</receiver>
+   <slot>setCurrentIndex(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>204</x>
+     <y>242</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>216</x>
+     <y>241</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>textEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>586</x>
+     <y>445</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>366</x>
+     <y>376</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>textEdit</receiver>
+   <slot>append(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>520</x>
+     <y>414</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>298</x>
+     <y>370</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
